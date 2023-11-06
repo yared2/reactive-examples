@@ -11,5 +11,9 @@ public interface PersonRepository {
 
     Mono<Person> getById(Integer id);
 
+    Mono<Person> getByIdGiven(Integer id);
+
     Flux<Person> findAll();
+
+    Mono<Person> findAllbyId(Integer id);
 }
